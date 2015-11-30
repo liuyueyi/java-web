@@ -1,0 +1,21 @@
+<configuration debug="false" scan="true" scanPeriod="30 seconds">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <Target></Target>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %p [%thread] [%c{10}:%L] - %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+    <appender name="COMMON_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/icmanager-common.log</file>
+        <encoder>
+            <pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

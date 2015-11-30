@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>$!title</title>
+  <meta name="description" content="item 360" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/resources/css/material-icons/material-icons.css">
+  <link rel="stylesheet" href="/resources/css/bootstrap-additions.min.css">
+  <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/resources/css/app.min.css">
+  <script src="/resources/js/jquery.min.js"></script>
+  <script src="/resources/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="app" class="app">
+  <!-- [S] Side -->
+  #parse('partials/side.vm')
+  <!-- [E] Side -->
+  <!-- [S] Content -->
+  <div id="content" class="app-content">
+    <!-- [S] Header -->
+    #parse('partials/header.vm')
+    <!-- [E] Header -->
+    <!-- [S] Body -->
+    $screen_content
+    <!-- [E] Body -->
+    <!-- [S] Footer -->
+    #parse('partials/footer.vm')
+    <!-- [E] Footer -->
+  </div>
+  <!-- [E] Content -->
+</div>
+</body>
+</html>
