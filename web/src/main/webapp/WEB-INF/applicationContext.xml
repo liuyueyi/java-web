@@ -5,6 +5,6 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <import resource="classpath*:spring/*"/>
+    <!--<import resource="classpath*:spring/*"/>-->
 
 </beans>

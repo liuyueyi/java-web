@@ -1,4 +1,4 @@
-package com.mogujie.service.main;
+package com.mogu.hui.main;
 
 import org.mortbay.jetty.Connector;
 import org.mortbay.jetty.Server;
@@ -13,8 +13,8 @@ public class Launcher {
 
         Server server = new Server();
         server.setThreadPool(boundedThreadPool);
-        WebAppContext webContext = new WebAppContext("/Users/yihui/Project/Web/web/src/main/webapp", "/");
-        webContext.setResourceBase("/Users/yihui/Project/Web/web/src/main/webapp");
+        WebAppContext webContext = new WebAppContext("/Users/yihui/GitHub/java-web/web/src/main/webapp", "/");
+        webContext.setResourceBase("/Users/yihui/GitHub/java-web/web/src/main/webapp");
         server.addHandler(webContext);
 
         Connector connector = new SelectChannelConnector();

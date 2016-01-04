@@ -1,4 +1,4 @@
-package com.mogujie.web;
+package com.mogu.hui.web;
 
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
