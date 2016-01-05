@@ -1,4 +1,4 @@
-package com.mogu.hui.web;
+package com.mogu.hui.web.controller;
 
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,16 +37,6 @@ public class Route {
      */
     @RequestMapping(value = "/status")
     public String status() {
-        return "status";
-    }
-
-    /**
-     * 监控检测
-     *
-     * @return
-     */
-    @RequestMapping(value = "/status_mgj")
-    public String statusMgj() {
         return "status";
     }
 
