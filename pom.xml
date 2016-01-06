@@ -21,6 +21,14 @@
         <velocity-tool.version>2.0</velocity-tool.version>
         <fastjson.version>1.2.7</fastjson.version>
         <junit.version>4.11</junit.version>
+        <slf4j-api.version>1.7.12</slf4j-api.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+    </dependencies>
 </project>
