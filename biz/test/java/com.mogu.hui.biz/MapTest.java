@@ -2,6 +2,9 @@ package com.mogu.hui.biz;
 
 import com.alibaba.fastjson.JSON;
 import com.google.gson.Gson;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.junit.Test;
 import sun.misc.BASE64Decoder;
 
@@ -14,6 +17,7 @@ import java.util.*;
  * Created by yihui on 16/1/4.
  */
 public class MapTest {
+    private static Logger logger = LoggerFactory.getLogger(MapTest.class);
     @Test
     public void mapTest() {
         List<Map<String,String>> result = this.getPropertyMap();
@@ -96,5 +100,13 @@ public class MapTest {
         BigDecimal b = new BigDecimal(f1);
         String bans = b.setScale(2, BigDecimal.ROUND_HALF_UP).toString();
         System.out.println(bans);
+    }
+
+    @Test
+    public void basicTest() {
+        String imgUrl = "/path/01.jpg,safd/02.jpg,,,";
+        String temp = StringUtils.strip(imgUrl, ",");
+        logger.info("Teh temp is {}", temp);
+        System.out.println("The temp is : " + temp);
     }
 }

@@ -22,6 +22,8 @@
         <fastjson.version>1.2.7</fastjson.version>
         <junit.version>4.11</junit.version>
         <slf4j-api.version>1.7.12</slf4j-api.version>
+        <slf4j-simple.version>1.6.4</slf4j-simple.version>
+        <slf4j-log4j12.version>1.7.5</slf4j-log4j12.version>
     </properties>
 
     <dependencies>
@@ -29,6 +31,17 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
