@@ -108,5 +108,10 @@ public class MapTest {
         String temp = StringUtils.strip(imgUrl, ",");
         logger.info("Teh temp is {}", temp);
         System.out.println("The temp is : " + temp);
+
+        List<String> str = new ArrayList<>(10);
+        str.add("haer");
+        str.add("asfddas");
+        System.out.println(str.size());
     }
 }

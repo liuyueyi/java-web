@@ -12,7 +12,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mogujie.web</groupId>
-    <artifactId>web</artifactId>
+    <artifactId>java-web-web</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
 
