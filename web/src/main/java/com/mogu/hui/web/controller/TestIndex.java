@@ -21,7 +21,7 @@ public class TestIndex {
      * @param itemId
      * @return
      */
-    @RequestMapping(value = "/id/{itemId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/id/{itemId}", method = RequestMethod.GET, produces="text/html;charset=UTF-8")
     @ResponseBody
     public String queryItemById(@PathVariable String itemId){
         String result = "The item Id is: " + itemId;
