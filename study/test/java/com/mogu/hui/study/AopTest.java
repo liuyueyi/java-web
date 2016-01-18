@@ -51,8 +51,18 @@ public class AopTest {
                 proxy);
         userBean.addUser();
 
+
+        // 下一个测试
+
         rootUserBean = new UserBeanImpl();
         proxy.createTargetObject(rootUserBean);
+        userBean = (UserBean) Proxy.newProxyInstance(rootUserBean.getClass().getClassLoader(),
+                rootUserBean.getClass().getInterfaces(), proxy);
+        userBean.addUser();
+
+
+
+        proxy.createTargetObject(this);
         userBean = (UserBean) Proxy.newProxyInstance(rootUserBean.getClass().getClassLoader(),
                 rootUserBean.getClass().getInterfaces(), proxy);
         userBean.addUser();
@@ -68,5 +78,12 @@ public class AopTest {
             System.out.println(ano + "");
         }
         System.out.println("over");
+    }
+
+
+    @Test
+    public void fieldAnoTest() {
+        AopTest aopTest = new AopTest();
+
     }
 }

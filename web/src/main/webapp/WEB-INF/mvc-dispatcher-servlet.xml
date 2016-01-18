@@ -31,10 +31,10 @@
         <property name="layoutUrl" value="layouts/none.vm"/>
     </bean>
 
-    <!--支持多媒体文件上传-->
-    <bean id="multipartResolver"
-          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-    </bean>
+    <!--&lt;!&ndash;支持多媒体文件上传&ndash;&gt;-->
+    <!--<bean id="multipartResolver"-->
+          <!--class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
+    <!--</bean>-->
 
     <mvc:annotation-driven>
         <mvc:message-converters register-defaults="true">
