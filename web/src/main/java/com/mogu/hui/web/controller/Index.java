@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Created by yihui on 15/11/30.
  */
-public class Route {
+public class Index {
     /**
      * index跳转
      *
      * @param model
-     * @return
+     * Inex
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(ModelMap model) {
@@ -24,9 +24,9 @@ public class Route {
      *
      * @return
      */
-    @RequestMapping(value = "/test")
+    @RequestMapping(value = "/index")
     public String test() {
-        return "test";
+        return "index";
     }
 
 
