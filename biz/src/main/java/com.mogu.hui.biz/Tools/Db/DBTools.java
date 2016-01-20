@@ -24,7 +24,7 @@ public class DBTools {
         PreparedStatement stat = null;
         ResultSet rs = null;
 
-        List<Map<String, Object>> result = new ArrayList<>();
+        List<Map<String, Object>> result = new ArrayList<Map<String, Object>>();
 
         try {
             conn = dbUtil.getConn();
@@ -35,7 +35,7 @@ public class DBTools {
             rs = stat.executeQuery();
             Field[] fields = clz.getDeclaredFields();
             while (rs.next()) {
-                Map<String, Object> map = new HashMap<>();
+                Map<String, Object> map = new HashMap<String, Object>();
                 for (Field field: fields) {
                     String name = field.getName();
                     map.put(field.getName(), rs.getObject(field.getName()));

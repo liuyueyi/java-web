@@ -91,6 +91,12 @@
             <artifactId>jetty</artifactId>
             <version>${jetty.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.mogu.hui.web</groupId>
+            <artifactId>java-web-biz</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

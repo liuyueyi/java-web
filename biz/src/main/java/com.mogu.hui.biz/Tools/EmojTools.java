@@ -1,5 +1,7 @@
 package com.mogu.hui.biz.Tools;
 
+import com.mogu.hui.biz.monitor.annotation.RT;
+
 import java.io.UnsupportedEncodingException;
 
 /**
@@ -13,6 +15,7 @@ public class EmojTools {
      * @param input
      * @return string
      */
+    @RT
     public static String encode(String input) {
         if (input.isEmpty()) {
             return "";
@@ -54,6 +57,7 @@ public class EmojTools {
         return sanitized;
     }
 
+    @RT
     public static String decode(String input) {
         return unicode2String(input);
     }
