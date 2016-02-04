@@ -1,4 +1,4 @@
-package com.mogu.hui.biz.Tools;
+package com.mogu.hui.biz.tools;
 
 import org.junit.Test;
 

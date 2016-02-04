@@ -1,9 +1,9 @@
-package com.mogu.hui.biz.Tools.Cache.impl;
+package com.mogu.hui.biz.tools.cache.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import com.mogu.hui.biz.Tools.Cache.IMethodCache;
+import com.mogu.hui.biz.tools.cache.IMethodCache;
 import org.springframework.util.StringUtils;
 
 import java.util.concurrent.TimeUnit;

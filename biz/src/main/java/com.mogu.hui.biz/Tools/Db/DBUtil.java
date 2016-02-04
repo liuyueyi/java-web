@@ -1,4 +1,4 @@
-package com.mogu.hui.biz.Tools.Db;
+package com.mogu.hui.biz.tools.db;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 

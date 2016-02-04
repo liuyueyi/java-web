@@ -1,6 +1,6 @@
-package com.mogu.hui.biz.Tools;
+package com.mogu.hui.biz.tools;
 
-import com.mogu.hui.biz.Tools.Db.DBTools;
+import com.mogu.hui.biz.tools.db.DBTools;
 import org.junit.Test;
 
 import java.sql.SQLException;

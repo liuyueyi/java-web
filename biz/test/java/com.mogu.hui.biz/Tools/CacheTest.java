@@ -1,7 +1,7 @@
-package com.mogu.hui.biz.Tools;
+package com.mogu.hui.biz.tools;
 
-import com.mogu.hui.biz.Tools.Cache.impl.GuavaCache;
-import com.mogu.hui.biz.Tools.Cache.impl.RedisCache;
+import com.mogu.hui.biz.tools.cache.impl.GuavaCache;
+import com.mogu.hui.biz.tools.cache.impl.RedisCache;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;

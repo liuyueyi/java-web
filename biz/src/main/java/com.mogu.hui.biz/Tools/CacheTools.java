@@ -1,4 +1,4 @@
-package com.mogu.hui.biz.Tools;
+package com.mogu.hui.biz.tools;
 
 /**
  * Created by yihui on 16/1/6.

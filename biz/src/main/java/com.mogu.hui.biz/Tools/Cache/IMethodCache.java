@@ -1,4 +1,4 @@
-package com.mogu.hui.biz.Tools.Cache;
+package com.mogu.hui.biz.tools.cache;
 
 /**
  * Created by yihui on 16/1/6.
