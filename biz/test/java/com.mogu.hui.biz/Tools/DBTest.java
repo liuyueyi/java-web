@@ -22,6 +22,7 @@ public class DBTest {
     public void dbTest() throws SQLException {
         String sql = "select * from user limit 2";
         Object ans = DBTools.select(sql, User.class);
+
         System.out.println(ans);
     }
 }
